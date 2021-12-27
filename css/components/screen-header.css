@@ -1,0 +1,35 @@
+.screen-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px ;
+    margin-bottom: 15px;
+}
+.screen-header__title{
+    font-size:32px;
+    font-weight: bolder;
+}
+.screen-header__icons span{
+    margin-left: 25px;
+    position: relative;
+}
+.screen-header-icons_on_find{
+    position: absolute;
+    right:-45px;
+}
+.screen-header-find{
+    margin-bottom: 1px;
+}
+
+@keyframes rotateCog{
+    from{
+        transform:none;
+    }
+    to{
+        transform:rotateZ(360deg);
+    }
+}
+
+.screen-header__icons .fa-cog:hover{
+    animation:rotateCog 2s linear infinite;
+}

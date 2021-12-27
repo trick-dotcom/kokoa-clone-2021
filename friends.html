@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Friends - Kokoa Clone</title>
+    <link href="css/styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>08:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>110%</span>
+        <i class="fas fa-battery-full"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="screen-header">
+      <h1 class="screen-header__title">Friends</h1>
+      <div class="screen-header__icons">
+        <span><i class="fas fa-search fa-lg"></i></span>
+        <span><i class="fas fa-music fa-lg"></i></span>
+        <span><i class="fas fa-cog fa-lg"></i></span> 
+      </div>
+    </header>
+
+    <a id="friends-display-link">
+      <i class="fas fa-info-circle"></i>
+      Frineds' Names Display 
+      <i class="fas fa-chevron-right fa-xs"></i>
+    </a>
+
+    <main class="friends-screen">
+      <div class="user-component">
+        <div class="user-component__column">
+          <img src="https://t1.daumcdn.net/cfile/tistory/2207573D58CFDE2704" 
+          class="user-component__ava user-component__ava--xl"/>
+          <div class="user-component__text">
+            <h4 class="user-component__title">TRICKDOTCOM</h4>
+            <!--<h6 class="user-component_subtitle">this text whatever</h6>-->
+          </div>
+        </div>
+        <div class="user-component__colunm"></div>
+      </div>
+      <div class="friends-screen__channel">
+        <div class="friends-screen__channel-header">
+          <span>Channel</span>
+          <i class="fas fa-chevron-up fa-xs"></i>
+        </div>
+        <div class="user-component">
+          <div class="user-component__column">
+            <img src="data:image/png;base64,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" 
+            class="user-component__ava user-component__ava--sm"/>
+            <div class="user-component__text">
+              <h4 class="user-component__title user-component__title--not-bold">Channel</h4>
+              <!--<h6 class="user-component_subtitle">this text whatever</h6>-->
+            </div>
+          </div>
+          <div class="user-component__colunm">
+            <div><span>2</span>
+            <i class="fas fa-chevron-right fa-xs"></i></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    
+
+
+
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__btn">
+                <a class="nav__link" href="friends.html">
+                  <i class="fas fa-user fa-2x"></i>
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="chats.html">
+                  <span class="nav_notification badge">3</span>
+                  <i class="far fa-comment fa-2x"></i>
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="find.html">
+                  <i class="fas fa-search fa-2x"></i>
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="more.html">
+                  <span class="nav_havetoclick"></span>
+                  <i class="fas fa-ellipsis-h fa-2x"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="splash-screen">
+      <i class="fas fa-comment"></i>
+    </div>
+
+    <div id="no-mobile">
+      <span>Your screen is too big ㅜㅜ</span>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

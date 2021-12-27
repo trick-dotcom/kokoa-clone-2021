@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chats - Kokoa Clone</title>
+    <link href="css/styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>08:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>110%</span>
+        <i class="fas fa-battery-full"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="screen-header">
+      <h1 class="screen-header__title">Chats</h1>
+      <div class="screen-header__icons">
+        <span><i class="fas fa-search fa-lg"></i></span>
+        <span><i class="far fa-comment-dots fa-lg"></i></span>
+        <span><i class="fas fa-music fa-lg"></i></span>
+        <span><i class="fas fa-cog fa-lg"></i></span> 
+      </div>
+    </header>
+
+    
+
+    <main class="main-screen">
+      <a href="chatting-room.html">
+        <div class="user-component">
+          <div class="user-component__column">
+            <img src="https://t1.daumcdn.net/cfile/tistory/2207573D58CFDE2704" 
+            class="user-component__ava user-component__ava"/>
+            <div class="user-component__text">
+              <h4 class="user-component__title">최대성</h4>
+              <h6 class="user-component_subtitle">도지코인 500원 가즈아</h6>
+            </div>
+          </div>
+          <div class="user-component__colunm">
+            <span class="user-component__time">06:04</span>
+            <div class="badge">1</div>
+          </div>
+        </div>
+      </a>
+      
+      <div class="user-component-gap_between_chatting_room"></div>
+      <div class="user-component">
+        <div class="user-component__column">
+          <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQU2JRbbl3LBOm_an3eI5iplFhOoLESyBwUfmWDO49BS1EYuGUE" 
+          class="user-component__ava user-component__ava"/>
+          <div class="user-component__text">
+            <h4 class="user-component__title">일론 머스크</h4>
+            <h6 class="user-component_subtitle">도지로 테슬라 결제 가능~~?</h6>
+          </div>
+        </div>
+        <div class="user-component__colunm">
+          <span class="user-component__time">02:04</span>
+          <div class="badge">1</div>
+        </div>
+      </div>
+      <div class="user-component-gap_between_chatting_room"></div>
+      <div class="user-component">
+        <div class="user-component__column">
+          <img src="https://dimg.donga.com/wps/NEWS/IMAGE/2020/11/02/103747596.3.jpg" 
+          class="user-component__ava user-component__ava"/>
+          <div class="user-component__text">
+            <h4 class="user-component__title">정신병자</h4>
+            <h6 class="user-component_subtitle">후욱후욱 3대 450가자..</h6>
+          </div>
+        </div>
+        <div class="user-component__colunm">
+          <span class="user-component__time">어제</span>
+        </div>
+      </div>
+      <div class="user-component-gap_between_chatting_room"></div>
+      <div class="user-component">
+        <div class="user-component__column">
+          <img src="data:image/png;base64,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" 
+          class="user-component__ava user-component__ava"/>
+          <div class="user-component__text">
+            <h4 class="user-component__title">키움증권</h4>
+            <h6 class="user-component_subtitle">예약되었던 주문이 체결...</h6>
+          </div>
+        </div>
+        <div class="user-component__colunm">
+          <span class="user-component__time">어제</span>
+          <div class="badge">1</div>
+        </div>
+      </div>
+    </main>
+
+    
+
+
+
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__btn">
+                <a class="nav__link" href="friends.html">
+                  <i class="far fa-user fa-2x"></i>
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="chats.html">
+                  <span class="nav_notification badge">3</span>
+                  <i class="fas fa-comment fa-2x"></i>
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="find.html">
+                  <i class="fas fa-search fa-2x"></i>
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="more.html">
+                  <span class="nav_havetoclick"></span>
+                  <i class="fas fa-ellipsis-h fa-2x"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="no-mobile">
+      <span>Your screen is too big ㅜㅜ</span>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
